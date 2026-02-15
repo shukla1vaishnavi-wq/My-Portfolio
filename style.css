@@ -1,14 +1,93 @@
+/* 1. GLOBAL STYLES */
 body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    color: #333;
+    background-color: #fff;
 }
 
+/* 2. NAVBAR */
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+/* 3. HERO SECTION */
 .hero-section {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1350&q=80');
+    /* This is a high-quality aesthetic background from Unsplash */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Parallax effect: background stays still while scrolling */
 }
 
-h1 { letter-spacing: 2px; }
+/* 4. SECTION HEADINGS */
+h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: #000;
+    bottom: 0;
+    left: 20%;
+}
+
+/* 5. PROGRESS BARS (SKILLS) */
+.progress {
+    background-color: #e9ecef;
+    border-radius: 50px;
+    height: 12px !important;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    border-radius: 50px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* 6. CARDS (VIBES) */
+.card {
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* 7. UTILITIES */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.btn-dark {
+    border-radius: 50px;
+    padding: 12px 35px;
+    transition: all 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* 8. RESPONSIVENESS */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
