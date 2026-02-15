@@ -3,127 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Creative Portfolio</title>
+    <title>Vaishnavi Shukla | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">CREATIVE GENIUS</a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#vibes">Vibes</a>
-                <a class="nav-link" href="#contact">Contact</a>
+            <a class="navbar-brand fw-bold" href="#">VAISHNAVI SHUKLA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vibes">Vibes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#goals">Goals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Connect</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <section id="home" class="hero-section text-center text-white d-flex align-items-center">
         <div class="container">
-            <h1 class="display-2 fw-bold">Hey, I'm [Vaishnavi Shukla]!</h1>
-            <p class="lead">Designer | IEEE Coordinator | Storyteller</p>
-            <a href="#about" class="btn btn-outline-light btn-lg mt-3">Know More</a>
+            <h1 class="display-1 fw-bold">Hi, I'm Vaishnavi</h1>
+            <p class="lead italic-text">"A curious soul exploring coding, creativity, and life. A little messy, a little magical, but always becoming better."</p>
+            <div class="mt-4">
+                <a href="#about" class="btn btn-outline-light px-4 py-2 mx-2">About Me</a>
+                <a href="#skills" class="btn btn-outline-light px-4 py-2 mx-2">My Skills</a>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="py-5">
+    <section id="about" class="py-5 section-story text-white">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="fw-bold">My Story</h2>
-                    <p class="lead text-primary">From visualizing ideas to building them.</p>
-                    <p>I am someone who believes in the power of aesthetics and logic. My journey isn't just about what I do, but <strong>who I am as a person</strong>—organized, disciplined, and a fast learner who adapts to any environment.</p>
-                    <p>I connect deeply with people, making communication easy through emotional intelligence. Whether it’s creative direction or solving a Java logic problem, I bring clarity and consistency to the table.</p>
+                <div class="col-md-6">
+                    <h2 class="display-4 fw-bold">My Story</h2>
+                    <p>I believe in the power of aesthetics and logic. My journey is about becoming disciplined and organized while keeping my creative spark alive.</p>
+                    <p>I connect deeply with people—emotional intelligence is my hidden strength. I’m not just building code; I’m building a version of myself that I’m proud of every day.</p>
+                    <a href="#skills" class="btn btn-light mt-3">Next: What I'm Good At →</a>
                 </div>
-                <div class="col-lg-6">
-                    <div class="p-4 bg-white shadow-sm rounded border-start border-5 border-dark">
-                        <h4 class="mb-4 text-center">What I'm Good At</h4>
-                        
-                        <label>Creative Direction & Aesthetics</label>
-                        <div class="progress mb-3"><div class="progress-bar bg-dark" style="width: 95%">95%</div></div>
-
-                        <label>Editing & Photography</label>
-                        <div class="progress mb-3"><div class="progress-bar bg-dark" style="width: 85%">85%</div></div>
-
-                        <label>Organization & Discipline</label>
-                        <div class="progress mb-3"><div class="progress-bar bg-dark" style="width: 90%">90%</div></div>
-
-                        <label>Java & Coding Foundations</label>
-                        <div class="progress mb-3"><div class="progress-bar bg-secondary" style="width: 50%">50%</div></div>
-                    </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?auto=format&fit=crop&w=500&q=80" class="img-fluid rounded-circle shadow-lg" alt="Creative Spirit">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="vibes" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-2 text-center">My Vibes</h2>
-            <p class="text-muted mb-5">A peek into my world—the things I adore and the things I run from.</p>
-            
+    <section id="skills" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Skills & Expertise</h2>
             <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100 border-0 shadow-sm p-3">
-                        <div class="card-body">
-                            <h4 class="text-success mb-4">Things that make me smile ❤️</h4>
-                            <ul class="list-group list-group-flush text-start">
-                                <li class="list-group-item border-0">🍦 Ice cream (a little too much!)</li>
-                                <li class="list-group-item border-0">☁️ The Sky (I can stare at it for hours)</li>
-                                <li class="list-group-item border-0">🎶 Songs & Long soft conversations</li>
-                                <li class="list-group-item border-0">✨ People who notice my small gestures</li>
-                                <li class="list-group-item border-0">🍬 Kaju Katli (When the mood strikes)</li>
-                            </ul>
-                        </div>
+                <div class="col-md-4">
+                    <div class="skill-card p-4 shadow-sm text-center">
+                        <h4>Creative Direction</h4>
+                        <p>Visualizing ideas and bringing aesthetic concepts to life.</p>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="skill-card p-4 shadow-sm text-center">
+                        <h4>Java Coding</h4>
+                        <p>Strengthening logic, structures, and problem-solving step by step.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card p-4 shadow-sm text-center">
+                        <h4>Fast Learning</h4>
+                        <p>Picking up new tools and adapting to any environment quickly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#vibes" class="btn btn-dark">Next: Peek Into My World →</a>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-md-6">
-                    <div class="card h-100 border-0 shadow-sm p-3">
-                        <div class="card-body">
-                            <h4 class="text-danger mb-4">Things I run from ❌</h4>
-                            <ul class="list-group list-group-flush text-start">
-                                <li class="list-group-item border-0">🍛 The "Effort" of chewing (Survival only!)</li>
-                                <li class="list-group-item border-0">📢 Loud noises (Instant panic)</li>
-                                <li class="list-group-item border-0">👥 Crowded spaces</li>
-                                <li class="list-group-item border-0">
-                                    <button class="btn btn-sm btn-outline-dark mt-2" onclick="revealSecret()">
-                                        The rest? Click to see... 🤫
-                                    </button>
-                                    <p id="secret-message" class="mt-2 fw-bold text-dark" style="display: none;"></p>
-                                </li>
-                                <li class="list-group-item border-0">👑 I'm the mysterious bossy one, after all.</li>
-                            </ul>
-                        </div>
+    <section id="projects" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">What I'm Creating</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="project-box border p-3 h-100">
+                        <h5>Project 01: Technical Base</h5>
+                        <p class="small">Strengthening Java fundamentals and exploring DSA logic.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-box border p-3 h-100">
+                        <h5>Project 02: Creative Experiments</h5>
+                        <p class="small">Editing, photography, and aesthetic design concepts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-box border p-3 h-100">
+                        <h5>Project 03: Personal Growth</h5>
+                        <p class="small">Building communication, confidence, and discipline.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-5 text-center">
+    <section id="vibes" class="py-5 section-vibes">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Vibes & Mood</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-3 border-0 shadow">
+                        <h4>Adore ❤️</h4>
+                        <p>Ice cream, The Sky, Kaju Katli, and people who remember small things.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 border-0 shadow">
+                        <h4>Avoid ❌</h4>
+                        <p>Loud noises, Crowds, and the "effort" of chewing food!</p>
+                        <button class="btn btn-sm btn-outline-danger mt-2" onclick="revealSecret()">The Secret... 🤫</button>
+                        <p id="secret-message" class="mt-2 fw-bold" style="display: none;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 text-center bg-white">
         <div class="container">
             <h2 class="fw-bold">Let's Connect</h2>
-            <p class="mb-4">Whether it's a creative project or a chat about the sky, my inbox is always open.</p>
-            <a href="mailto:shukla1.vaishnavi@gmail.com" class="btn btn-dark btn-lg px-5">Send an Email</a>
+            <p>"Let's build something beautiful together."</p>
+            <div class="mb-4">
+                <a href="mailto:your-email@gmail.com" class="btn btn-dark mx-2">Email</a>
+                <a href="#" class="btn btn-outline-dark mx-2">LinkedIn</a>
+                <a href="#" class="btn btn-outline-dark mx-2">GitHub</a>
+            </div>
+            <hr>
+            <p class="mt-5 px-lg-5 text-muted fst-italic">
+                "Thank you for reaching the end of my little corner on the internet. I hope you felt connected to the real me. This website is a piece of my growth and the person I am becoming."
+            </p>
         </div>
     </section>
-
-    <footer class="py-4 bg-dark text-white text-center">
-        <small>&copy; 2026 | Built with ✨ by the Mysterious Bossy One</small>
-    </footer>
 
     <script>
         function revealSecret() {
             const message = document.getElementById('secret-message');
-            message.innerHTML = "I told you, it's a secret! Stop being so curious. 👑";
+            message.innerHTML = "I told you, it's a secret! 👑";
             message.style.display = "block";
-            setTimeout(() => {
-                message.style.display = "none";
-            }, 3000);
+            setTimeout(() => { message.style.display = "none"; }, 3000);
         }
     </script>
 
