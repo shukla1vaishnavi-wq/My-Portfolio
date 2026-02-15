@@ -16,50 +16,116 @@
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#skills">Skills</a>
                 <a class="nav-link" href="#vibes">Vibes</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <section id="home" class="hero-section text-center text-white d-flex align-items-center">
         <div class="container">
-            <h1 class="display-2 fw-bold">Hey, I'm [Your Name]!</h1>
-            <p class="lead">Designer | IEEE Core Member | Storyteller</p>
+            <h1 class="display-2 fw-bold">Hey, I'm [Vaishnavi Shukla]!</h1>
+            <p class="lead">Designer | IEEE Coordinator | Storyteller</p>
             <a href="#about" class="btn btn-outline-light btn-lg mt-3">Know More</a>
         </div>
     </section>
-    <section id="skills" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center fw-bold mb-5">My Expertise</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Canva & Poster Design</label>
-                <div class="progress mb-3" style="height: 25px;">
-                    <div class="progress-bar bg-success" style="width: 90%">90%</div>
-                </div>
 
-                <label>Creative Content</label>
-                <div class="progress mb-3" style="height: 25px;">
-                    <div class="progress-bar bg-info" style="width: 85%">85%</div>
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">My Story</h2>
+                    <p class="lead text-primary">From visualizing ideas to building them.</p>
+                    <p>I am someone who believes in the power of aesthetics and logic. My journey isn't just about what I do, but <strong>who I am as a person</strong>—organized, disciplined, and a fast learner who adapts to any environment.</p>
+                    <p>I connect deeply with people, making communication easy through emotional intelligence. Whether it’s creative direction or solving a Java logic problem, I bring clarity and consistency to the table.</p>
                 </div>
+                <div class="col-lg-6">
+                    <div class="p-4 bg-white shadow-sm rounded border-start border-5 border-dark">
+                        <h4 class="mb-4 text-center">What I'm Good At</h4>
+                        
+                        <label>Creative Direction & Aesthetics</label>
+                        <div class="progress mb-3"><div class="progress-bar bg-dark" style="width: 95%">95%</div></div>
 
-                <label>Web Development (Learning)</label>
-                <div class="progress mb-3" style="height: 25px;">
-                    <div class="progress-bar bg-warning" style="width: 40%">40%</div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <div class="p-4 border-start border-4 border-primary bg-white shadow-sm">
-                    <p class="fst-italic">"Design is not just what it looks like and feels like. Design is how it works."</p>
-                    <footer class="blockquote-footer">Steve Jobs</footer>
+                        <label>Editing & Photography</label>
+                        <div class="progress mb-3"><div class="progress-bar bg-dark" style="width: 85%">85%</div></div>
+
+                        <label>Organization & Discipline</label>
+                        <div class="progress mb-3"><div class="progress-bar bg-dark" style="width: 90%">90%</div></div>
+
+                        <label>Java & Coding Foundations</label>
+                        <div class="progress mb-3"><div class="progress-bar bg-secondary" style="width: 50%">50%</div></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="vibes" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-2 text-center">My Vibes</h2>
+            <p class="text-muted mb-5">A peek into my world—the things I adore and the things I run from.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <h4 class="text-success mb-4">Things that make me smile ❤️</h4>
+                            <ul class="list-group list-group-flush text-start">
+                                <li class="list-group-item border-0">🍦 Ice cream (a little too much!)</li>
+                                <li class="list-group-item border-0">☁️ The Sky (I can stare at it for hours)</li>
+                                <li class="list-group-item border-0">🎶 Songs & Long soft conversations</li>
+                                <li class="list-group-item border-0">✨ People who notice my small gestures</li>
+                                <li class="list-group-item border-0">🍬 Kaju Katli (When the mood strikes)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <h4 class="text-danger mb-4">Things I run from ❌</h4>
+                            <ul class="list-group list-group-flush text-start">
+                                <li class="list-group-item border-0">🍛 The "Effort" of chewing (Survival only!)</li>
+                                <li class="list-group-item border-0">📢 Loud noises (Instant panic)</li>
+                                <li class="list-group-item border-0">👥 Crowded spaces</li>
+                                <li class="list-group-item border-0">
+                                    <button class="btn btn-sm btn-outline-dark mt-2" onclick="revealSecret()">
+                                        The rest? Click to see... 🤫
+                                    </button>
+                                    <p id="secret-message" class="mt-2 fw-bold text-dark" style="display: none;"></p>
+                                </li>
+                                <li class="list-group-item border-0">👑 I'm the mysterious bossy one, after all.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold">Let's Connect</h2>
+            <p class="mb-4">Whether it's a creative project or a chat about the sky, my inbox is always open.</p>
+            <a href="mailto:shukla1.vaishnavi@gmail.com" class="btn btn-dark btn-lg px-5">Send an Email</a>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <small>&copy; 2026 | Built with ✨ by the Mysterious Bossy One</small>
+    </footer>
+
+    <script>
+        function revealSecret() {
+            const message = document.getElementById('secret-message');
+            message.innerHTML = "I told you, it's a secret! Stop being so curious. 👑";
+            message.style.display = "block";
+            setTimeout(() => {
+                message.style.display = "none";
+            }, 3000);
+        }
+    </script>
 
 </body>
-
 </html>
