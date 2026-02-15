@@ -6,31 +6,31 @@ h1, h2 { font-family: 'Playfair Display', serif; }
 .hero-section {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=1350&q=80');
+                url('https://i.pinimg.com/736x/8e/f5/5a/8ef55abe661e71ae629846cb48295734.jpg');
     background-size: cover;
     background-position: center;
 }
 
 /* 2. STORY SECTION - Dark Aesthetic */
 .section-story {
-    background: #1a1a1a;
+    background: #c9ac97;
     padding: 100px 0;
 }
 
-/* 3. VIBES SECTION - Soft Pastel Background */
-.section-vibes {
-    background: #fdf2f2;
-    padding: 100px 0;
-}
-
-/* 4. SKILLS CARDS */
+/* 3. SKILLS CARDS */
 .skill-card {
     border-radius: 15px;
-    background: #fff;
+    background: #c9ac97;
     transition: 0.3s;
     border-top: 5px solid #000;
 }
 .skill-card:hover { transform: translateY(-10px); }
+
+/* 4. VIBES SECTION - Soft Pastel Background */
+.section-vibes {
+    background: #c9ac97;
+    padding: 100px 0;
+}
 
 /* 5. PROJECT BOXES */
 .project-box {
